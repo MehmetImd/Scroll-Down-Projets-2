@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+}
+body {
+    overflow: hidden;
+}
+section {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.text-box h4 {
+    position: relative;
+    bottom: 190px;
+    letter-spacing: 2px;
+}
+.text-box h1 {
+    position: relative;
+    bottom: 180px;
+    font-size: 80px;
+    letter-spacing: 10px;
+}
+.text-box a {
+    position: relative;
+    top: 75px;
+    border: 3px solid black;
+    padding: 15px 25px;
+    border-radius: 60px;
+    font-size: 22px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    letter-spacing: 4px;
+}
+.text-box p {
+    position: relative;
+    top: 120px;
+    font-size: 18px;
+}
+#sec-one .scroll-down {
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    left: 47%;
+    bottom: 20px;
+    cursor: pointer;
+}
+#sec-one .scroll-down::after,
+#sec-one .scroll-down::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    border: 2px solid black;
+    height: 40px;
+    width: 40px;
+    transform: translate(-50%,-100%)rotate(45deg);
+    border-top: transparent;
+    border-left: transparent;
+    animation: scroll-down 1s ease-in-out infinite;
+}
+#sec-one .scroll-down::after {
+    top: 35%;
+    animation-delay: .3s;
+}
+#sec-two .scroll-down {
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    left: 47%;
+    bottom: 20px;
+    cursor: pointer;
+}
+#sec-two .scroll-down::after,
+#sec-two .scroll-down::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    border: 2px solid black;
+    height: 40px;
+    width: 40px;
+    transform: translate(-50%,-100%)rotate(45deg);
+    border-top: transparent;
+    border-left: transparent;
+    animation: scroll-down 1s ease-in-out infinite;
+}
+#sec-two .scroll-down::after {
+    top: 30%;
+    animation-delay: .3s;
+}
+@keyframes scroll-down {
+    0% {
+        opacity: 0;
+    }
+    30% {
+        opacity: 1;
+    }
+    60% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        top: 80%;
+    }
+}
+#sec-three .scroll-down {
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    left: 47%;
+    bottom: 20px;
+    cursor: pointer;
+}
+#sec-three .scroll-down::after,
+#sec-three .scroll-down::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    border: 2px solid black;
+    height: 40px;
+    width: 40px;
+    transform: translate(-50%,-100%)rotate(45deg);
+    border-top: transparent;
+    border-left: transparent;
+    animation: scroll-down 1s ease-in-out infinite;
+}
+#sec-three .scroll-down::after {
+    top: 35%;
+    animation-delay: .3s;
+}
+.scroll-up {
+    height: 50px;
+    width: 50px;
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    position: absolute;
+    background: transparent;
+    left: 49%;
+    bottom: 15px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 25px;
+}
+#icon {
+    position: absolute;
+    top: 10px;
+    right: 13px;
+    color: black;
+    transition: all 0.2s ease-in;
+    outline: none;
+}
+#icon:hover {
+    transform: scale(1.4);
+}
+#sec-one {
+    position: relative;
+    background-color: rgb(79, 159, 0);
+}
+#sec-two {
+    position: relative;
+    background-color: rgb(0, 133, 133);
+}
+#sec-three {
+    position: relative;
+    background-color: darkgoldenrod;
+}
+#sec-four {
+    position: relative;
+    background-color: darkred;
+}
